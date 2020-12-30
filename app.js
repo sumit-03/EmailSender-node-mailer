@@ -35,7 +35,7 @@ async function sendMail(res, name, address, occupation, email) {
         
     });
     var mailOptions = {
-        from: '"no reply" <Task29122020@gmail.com>',
+        from: `"no reply" <${process.env.TestAccountUser}>`,
         to: `${email}`,
         subject: 'Your Info',
         html: `<h3>Here is what You had Submitted<h3> <br>
